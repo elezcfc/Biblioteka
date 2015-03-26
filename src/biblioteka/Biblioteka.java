@@ -46,5 +46,10 @@ public class Biblioteka implements BibliotekaInterfejs {
 		
 		return rezultat;
 	}
-
+	
+	@Override
+	public LinkedList<Knjiga> getKnjige(){
+		return knjige;
+		//kopija liste kao alternativa, ali moze i ovako
+	}
 }
