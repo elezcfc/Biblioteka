@@ -17,6 +17,12 @@ public class Biblioteka implements BibliotekaInterfejs {
 			throw new RuntimeException("Knjiga vec postoji");
 		
 		knjige.add(knjiga);	
+		
+		/*
+		Autor a = new Autor();
+		a.set
+		obrisi kom za poruku
+		*/
 	}
 
 	@Override

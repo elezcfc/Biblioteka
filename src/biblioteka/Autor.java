@@ -1,13 +1,40 @@
 package biblioteka;
 
+/**
+ * Ova klasa predstavlja autora knjige. 
+ * @author Elez Stefan
+ * @version 1.0
+ *
+ */
 public class Autor { //testiracemo sav automatski ne generisani kod
 	
-	private String ime,prezime;
+	/**
+	 * ime autora
+	 */
+	private String ime;
+	
+	/**
+	 * prezime autora
+	 */
+	private String prezime;
 
+	/**
+	 * Vraca vrednost atributa ime
+	 * @return ime autora kao string
+	 */
 	public String getIme() {
 		return ime;
 	}
 
+	/**
+	 * Metoda postavlja vrednost atributa ime na unetu vrednost
+	 * @param ime Nova vrednost za ime autora
+	 * @throws java.lang.RuntimeException kada je 
+	 * <ul>
+	 * <li> uneto ime null </li> 
+	 * <li> prazan String</li> 
+	 * </ul>
+	 */
 	public void setIme(String ime) {
 		if(ime == null || ime.isEmpty()){
 			throw new RuntimeException ("Morate uneti ime");
